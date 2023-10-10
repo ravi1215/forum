@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedNotit</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="forums.html">Forums</a></li>
+                    <li class="nav-item"><a href="posts.html">Posts</a></li>
+                    <li class="nav-item"><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div>
+                <div class="brand">
+                    <span style="color: red;">Red</span>
+                    <span>Notit</span>
+                </div>
+            </div>
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Titles">Titles</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" placeholder="search ..." />
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Technology</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-code center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Artificial Intelligence</a></h4>
+                    <p>
+                        Description Content: Machines simulating human-like thinking and
+                        problem-solving processes.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>29 Posts | 4 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User1</a> <br />on
+                    <small>18 May 2023</small>
+                </div>
+            </div>
+        </div>
+        <!--More-->
+
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Sports</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-soccer-ball-o center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Football</a></h4>
+                    <p>
+                        Description Content: Passion, teamwork, strategy, goals - the
+                        essence of football's magic.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>36 Posts | 2 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User2</a> <br />on
+                    <small>6 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider" />
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-soccer-ball-o center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Cricket</a></h4>
+                    <p>
+                        Description Content: Bat-and-ball sport with teams, runs, and
+                        wickets, popular worldwide.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>27 Posts | 7 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User3</a> <br />on
+                    <small>19 Jan 2023</small>
+                </div>
+            </div>
+            <hr class="subforum-devider" />
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-soccer-ball-o center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Basketball</a></h4>
+                    <p>
+                        Description Content: Fast-paced sport with hoops, teamwork, and
+                        dribbling, loved worldwide.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User4</a> <br />on
+                    <small>12 Dec 2020</small>
+                </div>
+            </div>
+            <hr class="subforum-devider" />
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-soccer-ball-o center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Air hockey</a></h4>
+                    <p>
+                        Description Content: Fast-paced table game with paddles and puck,
+                        aiming to score goals.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>39 Posts | 16 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User5</a> <br />on
+                    <small>11 Feb 2023</small>
+                </div>
+            </div>
+            <hr class="subforum-devider" />
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-soccer-ball-o center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Volleyball</a></h4>
+                    <p>
+                        Description Content: Team sport with a net, spikes, and intense
+                        rallies
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>19 Posts | 8 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User6</a> <br />on
+                    <small>17 Mar 2023</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Anime</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-tv center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Demon Slayer</a></h4>
+                    <p>
+                        Description Content: Demon Slayer follows Tanjiro's quest for
+                        vengeance.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User7</a> <br />on
+                    <small>16 Oct 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider" />
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-tv center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Jujutsu Kaisen</a></h4>
+                    <p>
+                        Description Content: Japanese manga and anime about curses,
+                        battles, and supernatural powers..
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>29 Posts | 15 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User8</a> <br />on
+                    <small>12 Dec 2020</small>
+                </div>
+            </div>
+            <hr class="subforum-devider" />
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-tv center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Attack on titan</a></h4>
+                    <p>
+                        Description Content: Humanity's last stand against colossal
+                        humanoid creatures in dystopian world.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>42 Posts | 27 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User9</a> <br />on
+                    <small>12 Dec 2020</small>
+                </div>
+            </div>
+            <hr class="subforum-devider" />
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-tv center"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">One Piece</a></h4>
+                    <p>
+                        Description Content: Epic adventure of pirates seeking ultimate
+                        treasure, "One Piece" anime/manga.
+                    </p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>82 Posts | 32 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">User10</a> <br />on
+                    <small>28 Sep 2023</small>
+                </div>
+            </div>
+        </div>
+        <!---->
+    </div>
+
+    <footer>
+        <span>&copy; RedNotit | All rights reserved </span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

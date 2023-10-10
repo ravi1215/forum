@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedNotit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="forums.html">Forums</a></li>
+                    <li class="nav-item"><a href="posts.html">Posts</a></li>
+                    <li class="nav-item"><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand" style="color:red;">Red</div>
+            <div class="brand" >Notit</div>
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Titles">Titles</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    <div class="container">
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="forums.html">Forum</a> >> <a href="posts.html">Anime</a> >> <a href="">Attack on Titan</a></span>
+        </div>
+
+        <!--Topic Section-->
+        <div class="topic-container">
+            <!--Original thread-->
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Topic: Topic (Read 1325 Times)</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">User1</a></div>
+                    <div>Role: rook</div>
+                    <img src="https://cdn.pixabay.com/photo/2012/04/12/21/31/felix-30729_1280.png" alt="">
+                    <div>Posts: <u>45</u></div>
+                    
+                </div>
+                <div class="content">
+                    <br>
+                    Ok but in all seriousness
+                    <br> Why do the characters screams have so much pain and emotion in it?
+                    <br>
+                    How did it shock us? Why do their screams blast out suppressed emotions?
+                    <br>
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+        <!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">User2</a></div>
+                    <div>Role: serpent</div>
+                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                    <div>Posts: <u>455</u></div>
+                </div>
+                <div class="content">
+                    <br>
+                    That's legitely the best way he could have done it because it truly makes us feel
+                    <br>
+                    just like how the main protagonists felt: betrayed and shocked. 
+                    <br>
+                    Had there been any build up whatsoever, it would have ruined it
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+
+        <!--Another Comment With replies-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">User3</a></div>
+                    <div>Role: lion</div>
+                    <img src="https://cdn.pixabay.com/photo/2017/08/28/16/14/panther-2690225_1280.png" alt="">
+                    <div>Posts: <u>230</u></div>
+                   
+                </div>
+                <div class="content">
+                    <br>
+                    Japanese voice actors are just that good lol. 
+                    <br>
+                    That's why I'm not a big fan of dubs most of the time 
+                    <br>
+                    They feel like they're scared to scream.
+                    <br><br>
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+        
+
+    </div>
+    <footer>
+        <span>&copy;  RedNotit | All Rights Reserved</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
